@@ -7,6 +7,7 @@
   <title>Signup Page</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="https://fonts.cdnfonts.com/css/brown" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
@@ -24,54 +25,84 @@
         <form action="#" method="post">
           <div class="grid-group">
             <div class="grid-item">
-              <label for="firstname">First Name:</label>
-              <input type="text" id="firstname" name="firstname" required>
+              <strong>
+                <label for="firstname">First Name</label>
+              </strong>
+              <input type="text" id="firstname" name="firstname" placeholder="Tolu" required>
             </div>
 
             <div class="grid-item">
-              <label for="lastname">Last Name:</label>
+              <strong>
+                <label for="lastname">Last Name</label>
+              </strong>
               <input type="text" id="lastname" name="lastname" required>
             </div>
           </div>
           <div class="grid-group">
             <div class="grid-item">
-              <label for="gender">Gender:</label>
-              <input type="text" id="gender" name="gender" required>
+              <strong>
+                <label for="gender">Gender</label>
+              </strong>
+              <div class="custom-dropdown">
+                <select id="gender" name="gender" required>
+                  <option value="" disabled selected>Select here</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+              </div>
             </div>
 
             <div class="grid-item">
-              <label for="dob">Date of Birth:</label>
+              <strong><label for="dob">Date of Birth</label></strong>
               <input type="date" id="dob" name="dob" required>
             </div>
           </div>
           <div class="grid-group">
             <div class="grid-item">
-              <label for="weight">Weight:</label>
+              <strong>
+                <label for="weight">Weight</label>
+              </strong>
               <input type="number" id="weight" name="weight" required>
             </div>
 
             <div class="grid-item">
-              <label for="height">Height:</label>
+              <strong>
+                <label for="height">Height</label>
+              </strong>
               <input type="number" id="height" name="height" required>
             </div>
           </div>
 
           <div class="form-group">
-
-            <label for="activityLevel">Activity Level:</label>
-            <input type="text" id="activityLevel" name="activityLevel" required>
+            <strong>
+              <label for="activityLevel">Activity Level</label>
+            </strong>
+            <div class="custom-dropdown">
+              <select id="activityLevel" name="activityLevel" required>
+                <option value="" disabled selected>Select here</option>
+                <option value="veryActive">Very Active</option>
+                <option value="moderatelyActive">Moderately Active</option>
+                <option value="notActive">Not Active</option>
+              </select>
+            </div>
           </div>
 
           <div class="form-group">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required minlength="8">
+            <strong>
+              <label for="password">Password</label>
+            </strong>
+            <div class="password-container">
+              <input type="password" id="password" name="password" required minlength="8">
+              <button id="togglePassword" type="button" onclick="togglePasswordVisibility()">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
           </div>
-      </div>
 
-      <button type="submit">Register</button>
-      </form>
+          <button type="submit">Register</button>
+        </form>
+      </div>
     </div>
-  </div>
   </div>
   <script src="script.js"></script>
 
