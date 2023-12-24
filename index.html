@@ -6,10 +6,73 @@
   <meta name="viewport" content="width=device-width">
   <title>Signup Page</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.cdnfonts.com/css/brown" rel="stylesheet">
 </head>
 
 <body>
-  Hello world
+  <div class="container">
+    <div class="logo-container">
+      <img src="images/Logo.png" alt="Your Logo">
+      <h1 class="opening">For Individuals</h1>
+      <p class="opening-text">Start benefiting from the wellness experience. For companies looking on increasing
+        productivity, and improving
+        organization wellness. </p>
+    </div>
+
+    <div class="form-container">
+      <div class="signup-container">
+        <form action="#" method="post">
+          <div class="grid-group">
+            <div class="grid-item">
+              <label for="firstname">First Name:</label>
+              <input type="text" id="firstname" name="firstname" required>
+            </div>
+
+            <div class="grid-item">
+              <label for="lastname">Last Name:</label>
+              <input type="text" id="lastname" name="lastname" required>
+            </div>
+          </div>
+          <div class="grid-group">
+            <div class="grid-item">
+              <label for="gender">Gender:</label>
+              <input type="text" id="gender" name="gender" required>
+            </div>
+
+            <div class="grid-item">
+              <label for="dob">Date of Birth:</label>
+              <input type="date" id="dob" name="dob" required>
+            </div>
+          </div>
+          <div class="grid-group">
+            <div class="grid-item">
+              <label for="weight">Weight:</label>
+              <input type="number" id="weight" name="weight" required>
+            </div>
+
+            <div class="grid-item">
+              <label for="height">Height:</label>
+              <input type="number" id="height" name="height" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+
+            <label for="activityLevel">Activity Level:</label>
+            <input type="text" id="activityLevel" name="activityLevel" required>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8">
+          </div>
+      </div>
+
+      <button type="submit">Register</button>
+      </form>
+    </div>
+  </div>
+  </div>
   <script src="script.js"></script>
 
   <!--

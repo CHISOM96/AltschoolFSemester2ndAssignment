@@ -2,3 +2,136 @@ html {
   height: 100%;
   width: 100%;
 }
+
+body {
+  background-color: rgba(46, 196, 182, 0.04);
+  flex-shrink: 0;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+}
+
+.opening {
+  color: var(--cl-black, #000b0a);
+  font-family: BrownBold;
+  font-size: 40px;
+  font-style: normal;
+  line-height: 50px;
+  letter-spacing: -0.8px;
+  font-weight: 700 !important;
+}
+
+.opening-text {
+  color: var(--cl-grey, #737373);
+  font-family: BrownMediumRegular;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 25px;
+}
+
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.logo-container img {
+  max-width: 50%;
+  height: auto;
+  vertical-align: middle;
+  margin-right: 100px;
+}
+
+.logo-container p {
+  margin-top: 10px;
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  width: 50%;
+  height: 80%;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+}
+
+.signup-container h2 {
+  text-align: center;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.grid-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .logo-container,
+  .form-container {
+    width: 100%;
+    /* Full width on small screens */
+  }
+
+  .logo-container {
+    order: 1;
+    /* Move logo container to the top */
+  }
+
+  .form-container {
+    order: 2;
+    /* Move form container below the logo */
+  }
+}
